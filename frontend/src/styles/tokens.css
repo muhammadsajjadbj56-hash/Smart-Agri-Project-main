@@ -1,0 +1,39 @@
+:root {
+  --sidebar-bg: #0a1a0d;
+  --sidebar-hover: #122919;
+  --sidebar-active: #1a3d28;
+  --sidebar-border: rgba(255,255,255,0.07);
+  --sidebar-text: rgba(255,255,255,0.88);
+  --sidebar-muted: rgba(255,255,255,0.45);
+  --accent: #22c55e;
+  --accent-dim: #16a34a;
+  --accent-soft: rgba(34,197,94,0.12);
+  --page-bg: #f0f7f2;
+  --card-bg: #ffffff;
+  --card-border: rgba(0,0,0,0.06);
+  --card-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  --text-main: #0f1f14;
+  --text-sub: #4b7260;
+  --green-50: #f0fdf4;
+  --green-100: #dcfce7;
+  --green-600: #16a34a;
+  --green-700: #15803d;
+  --green-800: #166534;
+  --green-900: #14532d;
+  --radius-card: 12px;
+  --radius-btn: 8px;
+}
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  font-family: system-ui, -apple-system, sans-serif;
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.12); border-radius: 10px; }

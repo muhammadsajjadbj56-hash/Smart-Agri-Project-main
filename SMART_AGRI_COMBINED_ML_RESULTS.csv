@@ -1,0 +1,4 @@
+Module,Model,Framework_or_Library,Classes,Evaluation_Type,Evaluation_Samples,Accuracy,Precision,Recall,F1_Score,Avg_Inference_Time
+Plant Disease Detection,EfficientNet-B0,PyTorch,78,Validation Set Evaluation (Local Dataset),2735,83.88%,85.82% (Macro),83.88% (Macro),83.12% (Macro),63.20 ms/image
+Crop Recommendation,Random Forest,Scikit-Learn,22,In-Sample Dataset Evaluation,2200,99.82%,99.82% (Weighted),99.82% (Weighted),99.82% (Weighted),N/A
+Crop Recommendation,Random Forest,Scikit-Learn,22,Holdout Split Evaluation (80/20 Stratified),440,99.77%,99.78% (Weighted),99.77% (Weighted),99.77% (Weighted),N/A

@@ -1,0 +1,131 @@
+/* Crop Intelligence Center Page Styling */
+.crop-center-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Page Header */
+.crop-center-header {
+  margin-bottom: 0;
+}
+
+.crop-center-title {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--text-main);
+  margin: 0 0 6px 0;
+  line-height: 1.2;
+}
+
+.crop-center-subtitle {
+  font-size: 13px;
+  color: var(--green-600);
+  line-height: 1.6;
+  margin: 0 0 14px 0;
+  max-width: 680px;
+  font-weight: 500;
+}
+
+.crop-center-badges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.crop-center-badge {
+  font-size: 11px;
+  color: var(--green-700);
+  background: var(--green-50);
+  border: 1px solid var(--green-100);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+/* Two Tool Cards Grid */
+.crop-tools-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.crop-tool-card {
+  background: var(--card-bg);
+  border-radius: 14px;
+  border: 0.5px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.crop-tool-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+}
+
+.crop-tool-img {
+  width: 100%;
+  height: 180px;
+  flex-shrink: 0;
+  object-fit: cover;
+  background-color: #eaf4ed;
+  display: block;
+}
+
+.crop-tool-body {
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.crop-tool-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-main);
+  margin: 0 0 8px 0;
+}
+
+.crop-tool-desc {
+  font-size: 13px;
+  color: var(--text-sub);
+  line-height: 1.55;
+  margin: 0 0 18px 0;
+  flex: 1;
+}
+
+.crop-tool-btn {
+  width: 100%;
+  background: var(--green-600);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 11px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.15s ease;
+}
+
+.crop-tool-btn:hover {
+  background: var(--green-700);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .crop-tools-grid {
+    grid-template-columns: 1fr;
+  }
+}

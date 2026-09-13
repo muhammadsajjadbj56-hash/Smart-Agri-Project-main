@@ -1,0 +1,152 @@
+/* Home Page Styling */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* SECTION 1 — Hero Banner */
+.home-hero-banner {
+  background: var(--green-900);
+  border-radius: 16px;
+  padding: 32px 36px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-hero-circle {
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 220px;
+  height: 220px;
+  background: rgba(34, 197, 94, 0.07);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.home-hero-pill {
+  font-size: 11px;
+  color: var(--accent);
+  background: rgba(34, 197, 94, 0.15);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  padding: 3px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 14px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.home-hero-title {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 32px;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.25;
+  margin: 0 0 12px 0;
+  white-space: pre-line;
+}
+
+.home-hero-subtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  max-width: 480px;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.home-hero-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.home-mini-card {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.home-mini-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.home-mini-card-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.home-mini-card-desc {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* SECTION 2 — Info Grid */
+.home-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.home-info-card {
+  background: var(--card-bg);
+  border-radius: var(--radius-card);
+  border: 0.5px solid var(--card-border);
+  box-shadow: var(--card-shadow);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.home-info-card-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-main);
+  margin: 0;
+}
+
+.home-info-card-text {
+  font-size: 12px;
+  color: var(--text-sub);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.home-info-list {
+  padding-left: 18px;
+  margin: 0;
+  font-size: 12px;
+  color: var(--text-sub);
+  line-height: 1.65;
+}
+
+.home-info-list li {
+  margin-bottom: 4px;
+}
+
+.home-info-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .home-hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .home-info-grid {
+    grid-template-columns: 1fr;
+  }
+}

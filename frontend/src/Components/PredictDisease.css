@@ -1,0 +1,181 @@
+/* Plant Disease Prediction Page Styling */
+.disease-predict-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Page Header */
+.disease-predict-header {
+  margin-bottom: 24px;
+}
+
+.disease-predict-title {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--text-main);
+  margin: 0 0 4px 0;
+  line-height: 1.2;
+}
+
+.disease-predict-subtitle {
+  font-size: 13px;
+  color: var(--green-600);
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Upload Card */
+.disease-upload-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  border: 0.5px solid var(--card-border);
+  padding: 32px;
+  max-width: 560px;
+  width: 100%;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Drag and Drop Zone */
+.disease-dropzone {
+  border: 2px dashed var(--green-100);
+  border-radius: 12px;
+  background: var(--green-50);
+  padding: 40px 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 200px;
+}
+
+.disease-dropzone:hover,
+.disease-dropzone.drag-active {
+  border-color: var(--accent);
+  background: rgba(34, 197, 94, 0.06);
+}
+
+.disease-dropzone-icon {
+  font-size: 36px;
+  color: var(--green-600);
+  margin-bottom: 8px;
+}
+
+.disease-dropzone-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-main);
+  margin: 0 0 4px 0;
+}
+
+.disease-dropzone-sub {
+  font-size: 12px;
+  color: var(--text-sub);
+  margin: 0;
+}
+
+.disease-preview-img {
+  height: 180px;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Action Buttons Row */
+.disease-actions-row {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.disease-action-btn {
+  background: #ffffff;
+  border: 1px solid var(--card-border);
+  color: var(--text-main);
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex: 1;
+  transition: all 0.15s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.disease-action-btn:hover {
+  background: #f8faf8;
+  border-color: rgba(0, 0, 0, 0.12);
+}
+
+/* Predict Button */
+.disease-predict-btn {
+  width: 100%;
+  background: var(--green-600);
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 11px;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s ease, opacity 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.disease-predict-btn:hover:not(:disabled) {
+  background: var(--green-700);
+}
+
+.disease-predict-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Tip Text */
+.disease-tip-text {
+  font-size: 11px;
+  color: var(--text-sub);
+  text-align: center;
+  margin: 4px 0 0 0;
+}
+
+/* Spinner Animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ti-spin {
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  .disease-actions-row {
+    flex-direction: column;
+  }
+  .disease-upload-card {
+    padding: 20px;
+  }
+}

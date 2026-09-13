@@ -1,0 +1,155 @@
+/* SignUp Page Styling */
+.signup-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 56px);
+  width: 100%;
+  padding: 24px 0;
+}
+
+.signup-auth-card {
+  background: var(--card-bg);
+  border-radius: 16px;
+  border: 0.5px solid var(--card-border);
+  padding: 36px;
+  width: 440px;
+  max-width: 100%;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-pill-tag {
+  font-size: 11px;
+  color: var(--green-600);
+  background: var(--green-50);
+  border: 1px solid var(--green-100);
+  padding: 3px 12px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+  align-self: flex-start;
+  font-weight: 500;
+}
+
+.signup-heading {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--text-main);
+  margin: 0 0 4px 0;
+  line-height: 1.2;
+}
+
+.signup-subtext {
+  font-size: 13px;
+  color: var(--text-sub);
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.signup-grid-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.signup-field-group {
+  margin-bottom: 14px;
+}
+
+.signup-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-main);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.signup-input {
+  width: 100%;
+  padding: 9px 12px;
+  border: 0.5px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  font-size: 13px;
+  background: var(--green-50);
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  color: var(--text-main);
+}
+
+.signup-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+  background: #ffffff;
+}
+
+/* Collapsible Farmer ID Field Container */
+.signup-farmer-container {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.35s ease, margin 0.35s ease;
+  margin-bottom: 0;
+}
+
+.signup-farmer-container.open {
+  max-height: 90px;
+  opacity: 1;
+  margin-bottom: 14px;
+}
+
+.signup-checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 14px 0 20px 0;
+  font-size: 12px;
+  color: var(--text-sub);
+  cursor: pointer;
+  user-select: none;
+}
+
+.signup-checkbox-row input[type="checkbox"] {
+  accent-color: var(--green-600);
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.signup-submit-btn {
+  width: 100%;
+  padding: 10px;
+  background: var(--green-600);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.signup-submit-btn:hover {
+  background: var(--green-700);
+}
+
+.signup-bottom-text {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-sub);
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.signup-bottom-link {
+  color: var(--green-600);
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.signup-bottom-link:hover {
+  text-decoration: underline;
+}
